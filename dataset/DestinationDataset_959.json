@@ -1,0 +1,42 @@
+{
+	"name": "DestinationDataset_959",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "custid",
+				"type": "int",
+				"precision": 10,
+				"scale": 255
+			},
+			{
+				"name": "custname",
+				"type": "varchar",
+				"precision": 255,
+				"scale": 255
+			},
+			{
+				"name": "city",
+				"type": "varchar",
+				"precision": 255,
+				"scale": 255
+			},
+			{
+				"name": "baldue",
+				"type": "int",
+				"precision": 10,
+				"scale": 255
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "customer1"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
